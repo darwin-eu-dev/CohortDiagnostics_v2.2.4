@@ -15,17 +15,19 @@ createConceptCountsTable(
 )
 }
 \arguments{
-\item{connection}{}
+\item{connectionDetails}{database connection details}
 
-\item{cdmDatabaseSchema}{}
+\item{connection}{database connection}
 
-\item{tempEmulationSchema}{}
+\item{cdmDatabaseSchema}{CDM schema}
 
-\item{conceptCountsDatabaseSchema}{}
+\item{tempEmulationSchema}{schema to emulate temp table}
 
-\item{conceptCountsTable}{}
+\item{conceptCountsDatabaseSchema}{schema name for the concept counts table}
 
-\item{conceptCountsTableIsTemp}{}
+\item{conceptCountsTable}{table name}
+
+\item{conceptCountsTableIsTemp}{boolean to indicate if it should be a temporary table}
 }
 \description{
 Create a table containing the concept counts.

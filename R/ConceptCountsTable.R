@@ -18,13 +18,13 @@
 #' 
 #' @description Create a table containing the concept counts.
 #' 
-#' @param connectionDetails
-#' @param connection 
-#' @param cdmDatabaseSchema 
-#' @param tempEmulationSchema 
-#' @param conceptCountsDatabaseSchema 
-#' @param conceptCountsTable 
-#' @param conceptCountsTableIsTemp 
+#' @param connectionDetails database connection details
+#' @param connection database connection
+#' @param cdmDatabaseSchema CDM schema
+#' @param tempEmulationSchema schema to emulate temp table
+#' @param conceptCountsDatabaseSchema schema name for the concept counts table
+#' @param conceptCountsTable table name
+#' @param conceptCountsTableIsTemp boolean to indicate if it should be a temporary table
 #'
 #' @export
 createConceptCountsTable <- function(connectionDetails = NULL,

@@ -26,7 +26,7 @@ if (Sys.getenv("CDM5_POSTGRESQL_SERVER") == "") {
 }
 
 test_that("Create concept counts table", {
-  skip_if(skipConceptCountsTable | skipCdmTests, 'concept counts test not set')
+  skip_if(skipConceptCountsTable | skipCdmTests, 'create concept counts test not set')
   
   pgConnection <- DatabaseConnector::connect(connectionDetails = postgresConnectionDetails)
   with_dbc_connection(pgConnection, {
